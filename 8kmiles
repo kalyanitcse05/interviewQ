@@ -1,0 +1,26 @@
+about your roles and responsibilities
+S3 bucket policies/ACls
+aws Ec2 instances
+VPC peering / other ways to communicate between VPC's
+what are public and private subnets
+what is NAT gateway
+will LDAP users exist in AWS
+DNS settings
+Route53
+what is asume role in AWS
+when you asume role for EC2 for S3 ,   do you add anything at S3 end ?
+How do you connect to aws
+what is docker file
+how do you do kubernetes deployments
+what are types of services in kubernetes -- nodeports/clusterports
+what are pods/ what is the advantage of pods
+what is cloudformation
+git branching strategies
+how to configure jenkins slave
+typical jenkins declarative pipeline
+how to backup jenkins plugins
+what kind of jenkins jobs
+configure jenkins slaves in aws.
+----------
+how data can be stored by a container and accessed by another container.
+how a container can be downgraded to new version when there is file changes
