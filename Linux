@@ -1,0 +1,72 @@
+Operating System:
+
+•             Difference between AIX and Solaris
+•             Somebody (who does not know about UNIX) ask you to describe UNIX?
+                   UNIX is an operating system with Multi user and multi-tasking capabilities.
+•             You said UNIX is highly secure, how?
+•             When I try to login to UNIX server, what will happen in background?
+              Login program checks the user name in /etc/passwd and /etc/shadow. Execute /etc/profile, .profile of the user
+•             How does the UNIX authenticate the credentials? And how does it load UNIX profiles, home directory when you login.
+•             How do you integrate AD credentials with UNIX box (not by local login /users/password).
+•             How do you configure password less authentication?
+           Using SSH, copy the public key to server to authorized_keys in .ssh folder
+•             Can i run the RM command in the root file system?
+                      Rm has a default option –preserve-root , wich will not allow to delete /
+•             With a user id 0 and can i use rm command in  the root?
+                      User id 0 is root
+
+Storage:
+
+•             Difference between SAN and NAS  , SAN – process block based, NAS – process file based
+•             In order to mount NAS with Linux, what kind of information Linux administrator should get from NAS administrator?
+                   Mount (need hostname,user,pass)
+
+Load Balancing:
+
+•             Are you familiar with F5? How does F5 work?
+•             Are you familiar with DNS? How does DNS work?
+
+File Transfer:
+
+•             Differentiate FTP, SFTP, AS2 and FTPS 
+	FTPS is a secure FTP , developed on top of SSL with FTP. Opens a new port for each request
+	SFTP is a secure FTP , developed on SSH, all the commands, credentials, data are encrypted. Opens one port only
+•             What are the things key differences, functionalities between FTP and SFTP?
+
+
+Scripting:
+
+•             How do you run a script in c-shell which was written in K-shell? 
+•             What does #! mean? Does 2nd line matter?
+•             How do you put comments?
+•             How do you create and call a function?
+•             Why do you use the functions?
+•             How do you use flow controls - If, if else, etc..
+•             Difference between while and do while loop?
+
+Unix/Linux Admin questions.
+
+1. How do you find which processes are using a particular file?
+2. How do you find which remote hosts are connecting to your host on a particular port say 10123?
+3. What is ephemeral port in UNIX?
+4. There is a file Unix_Test.txt which contains words "Unix". How will you replace all Unix to UNIX?
+             $ echo "You are my best buddy" | sed -r 's/best/\U&/i'
+             You are my BEST buddy
+5. If you wish to see the % of memory usage and CPU usage for process
+                 top -p PID
+6. How to reverse a string in unix? $> echo "unix" | rev
+7. How to get the last word from a line in Unix file? $>echo "C for Cat" | rev | cut -f1 -d' ' | rev
+8. How to test if a zip file is corrupted in Linux? $> unzip –t file.zip
+9. What is the difference between Swapping and Paging?
+Read more: https://javarevisited.blogspot.com/2011/05/unix-command-interview-questions.html#ixzz5zp7k6dGB
+10.What is Kernel?
+11.What is piping?
+12. How do you inherit directory permissions for a file?
+ Using mkdir –mode or setfacl
+13. How to send HTTP request from a Linux server?
+        curl
+14. How to get the nth word of a line in Unix?
+15. Write command to list all the links from a directory? ls -lrt | grep "^l"
+16. What is the significance of the “tee” command?
+                It reads the standard input and sends it to the standard output while redirecting a copy of what it has read to the file specified by the user.
+
