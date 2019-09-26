@@ -1,0 +1,76 @@
+aws
+--docker setup on EC2--
+sudo yum update -y	
+sudo amazon-linux-extras install docker
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+logout and login
+docker info
+----
+
+docker pull healloworld / docker pull busy
+docker run busybox echo "hello from busybox"
+docker ps -a
+docker images
+docker rm <containserid>
+docker rmi <image id>
+docker container prune
+docker run -d -P --name static-site prakhar1989/static-site
+docker port static-site
+docker pull ubuntu:18.04
+
+
+-- install git
+yum --skip-broken -t install git
+=========================
+$ git remote get-url origin
+https://github.kp.org/Oracle-HCM/Extension.git
+
+1) Add any remote repositories you want to compare:
+
+git remote add origin git://github.com/user/foobar.git
+2) Update your local copy of a remote:
+
+git fetch origin
+Fetch won't change your working copy.
+
+3) Compare any branch from your local repository to any remote you've added:
+
+git diff master origin/master
+git branch dev_kal
+ git branch -r
+git checkout dev_kal
+## Create a local branch in github
+$ git push --set-upstream origin dev_kal
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'dev_kal' on GitHub by visiting:
+remote:      https://github.kp.org/Oracle-HCM/jenkins-folder-library/pull/new/dev_kal
+remote:
+To https://github.kp.org/Oracle-HCM/jenkins-folder-library.git
+ * [new branch]      dev_kal -> dev_kal
+Branch 'dev_kal' set up to track remote branch 'dev_kal' from 'origin'.
+
+$ git push --set-upstream origin  integrate-rollback
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'integrate-rollback' on GitHub by visiting:
+remote:      https://github.kp.org/Oracle-HCM/jenkins-folder-library/pull/new/integrate-rollback
+remote:
+To https://github.kp.org/Oracle-HCM/jenkins-folder-library.git
+ * [new branch]      integrate-rollback -> integrate-rollback
+Branch 'integrate-rollback' set up to track remote branch 'integrate-rollback' from 'origin'.
+
+
+git push
+fatal: The current branch integrate-rollback2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin integrate-rollback2
+
+
+\//nas05.service.softlayer.com/SL12345-1        
+/mnt/nas       
+cifs defaults,username=SL12345-1,password=NASPASSWORD 0 0
+
+===============
